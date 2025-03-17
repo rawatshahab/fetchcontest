@@ -4,51 +4,51 @@ All the details of the contests from all the three platforms are shown collectie
 
 Information regarding the API's used:
 1. LeetCode
-  •	Fetches upcoming and past LeetCode contests.
-	•	Endpoint: https://leetcode.com/graphql
-	•	Request Type: POST
-  •	Response Fields:
-	 •	title: Contest name
-	 •	startTime: Contest start time
-	 •	duration: Duration in seconds
-	 •	titleSlug: Used to construct contest URLs
+  1. Fetches upcoming and past LeetCode contests.
+	2. Endpoint: https://leetcode.com/graphql
+	3. Request Type: POST
+  4. Response Fields:
+	 1. title: Contest name
+	 2. startTime: Contest start time
+	 3. duration: Duration in seconds
+	 4. titleSlug: Used to construct contest URLs
 2. CodeChefs
-  •	Fetches upcoming and past CodeChef contests.
-	•	Endpoint: https://www.codechef.com/api/list/contests/all
-	•	Request Type: GET
-	•	Response Fields:
- 	 •	future_contests: Array of upcoming contests
-	 •	past_contests: Array of past contests
+  1. Fetches upcoming and past CodeChef contests.
+	2. Endpoint: https://www.codechef.com/api/list/contests/all
+	3. Request Type: GET
+	4. Response Fields:
+ 	 1. future_contests: Array of upcoming contests
+	 2. past_contests: Array of past contests
 3. CodeForces
-  •	Fetches upcoming and past Codeforces contests.
-	•	Endpoint: https://codeforces.com/api/contest.list?gym=false
-	•	Request Type: GET
-	•	Response Fields:
-	 •	phase: Contest status (BEFORE for upcoming, FINISHED for past)
-	 •	name: Contest name
-	 •	startTimeSeconds: Unix timestamp for contest start time
-	 •	durationSeconds: Contest duration
+  1. Fetches upcoming and past Codeforces contests.
+	2. Endpoint: https://codeforces.com/api/contest.list?gym=false
+	3. Request Type: GET
+	4. Response Fields:
+	 1. phase: Contest status (BEFORE for upcoming, FINISHED for past)
+	 2. name: Contest name
+	 3. startTimeSeconds: Unix timestamp for contest start time
+	 4. durationSeconds: Contest duration
 4. For youtube videos
-  •	Fetches YouTube video solutions for contests.
-	•	Endpoint: https://www.googleapis.com/youtube/v3/playlistItems
-	•	Authentication: Requires API Key (YOUTUBE_API_KEY)
-	•	Parameters:
-	 •	part=snippet
-	 •	playlistId: Playlist ID for a specific platform
-	 •	maxResults=20: Limits results to 20 videos
+  1. Fetches YouTube video solutions for contests.
+	2. Endpoint: https://www.googleapis.com/youtube/v3/playlistItems
+	3. Authentication: Requires API Key (YOUTUBE_API_KEY)
+	4. Parameters:
+	 1.	part=snippet
+	 2.	playlistId: Playlist ID for a specific platform
+	 3.	maxResults=20: Limits results to 20 videos
 
 Information about API Routes in Backend
 
 1. Contests API
-	 •	GET /api/all-contests
-	 •	Fetches upcoming and past contests from Codeforces, LeetCode, and CodeChef.
+	 1. GET /api/all-contests
+	 2. Fetches upcoming and past contests from Codeforces, LeetCode, and CodeChef.
 2. Bookmarks API
-	 •	POST /api/bookmark
-	 •	Toggles bookmark status for a contest.
-   •	Request Body: { name, site, startTime, duration, url }
-   •	GET /api/bookmarks
-	 •	Fetches all bookmarked contests.
+	 1. POST /api/bookmark
+	 2.	Toggles bookmark status for a contest.
+   3.	Request Body: { name, site, startTime, duration, url }
+   4.	GET /api/bookmarks
+	 5.	Fetches all bookmarked contests.
 3. YouTube Solutions API
-	 •	GET /api/solutions
-	 •	Fetches YouTube solution videos for contests.
+	 1.	GET /api/solutions
+	 2.	Fetches YouTube solution videos for contests.
  
