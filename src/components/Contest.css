@@ -1,0 +1,60 @@
+body[data-theme="dark"] .contest-card{
+  background: black;
+}
+
+body[data-theme="dark"] .contest-card span{
+  background: black;
+}
+body[data-theme="dark"] .bookmark-icon{
+  background: white;
+}
+.contest-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .contest-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .platform-tag {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  /* Platform Colors */
+  .codeforces { background-color: #f7f3fc; color: #aa00ff; }
+  .leetcode { background-color: #fdf3f2; color: #ff5733; }
+  .codechef { background-color: #fef8e6; color: #ff9800; }
+  
+  .start-time, .duration {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .visit-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .bookmark-icon {
+    cursor: pointer;
+  }
