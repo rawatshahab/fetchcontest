@@ -81,11 +81,9 @@ export default function Home() {
 
     return (
         <main className='main'>
-            <section className='text'>
-                <h1>Programming Contest Tracker</h1>
-                <p>Track upcoming and past coding contests from Codeforces,<br></br> CodeChef, and LeetCode.</p>
-            </section>
+           
             <section className='filter'>
+                <div className='a'>
                 <div className='platforms-1'>
                     <h1>Platforms</h1>
                     <div id="yello" onClick={() => togglePlatform("LeetCode")}>
@@ -101,6 +99,8 @@ export default function Home() {
                         <span>Codeforces</span>
                     </div>
                 </div>
+                
+              
                 
                 <div className='content'>
                     <span
@@ -125,6 +125,8 @@ export default function Home() {
                         Bookmarked
                     </span>
                 </div>
+                </div>
+               
                 <div className="content-2">
                 <section className="contests-grid">
                         {activeTab === "upcoming" && filteredContests.upcomingContests.map((contest, index) => (

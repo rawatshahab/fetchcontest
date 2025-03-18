@@ -9,11 +9,28 @@ body[data-theme="dark"] .platform-filters span{
     color: white;
 
 }
-body[data-theme="dark"] .platform-filters span:hover{
-    background-color: rgb(52, 48, 43);
+body[data-theme="dark"] .sticky-content{
+    background: black;
 
 }
 
+.sticky{
+    position: sticky; 
+    top: 50px; 
+    overflow: hidden; 
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    margin-bottom: 10px;
+
+}
+.sticky-content{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+}
 .solutions-page {
     min-height:100vh ;
     min-width: 100vw;
@@ -31,7 +48,7 @@ body[data-theme="dark"] .platform-filters span:hover{
     display: flex;
     justify-content: center;
     max-width: fit-content;
-    background-color: white;
+    background-color: rgba(110, 123, 129, 0.805);
     border-radius: 0.5rem;
     padding: 3px;
     margin: 0 auto;
@@ -99,29 +116,28 @@ body[data-theme="dark"] .platform-filters span:hover{
     color: #9370db;
 }
 
-.yellow{
+.blue{
     border-radius: 0.5rem;
-    color: #e7b85d;
-    background-color: rgba(228, 77, 38, 0.1);
-    border-color: rgba(228, 77, 38, 0.3);
+    font-weight: 700;
+    background-color: rgba(38, 139, 228, 0.691);
+
 }
 .voilet{
     border-radius: 0.5rem;
   
-    color: #9370db;
-    background-color: rgba(231, 184, 93, 0.1);
-    border-color: rgba(231, 184, 93, 0.3);
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.784);
+
 }
-.red{
+.green{
     border-radius: 0.5rem;
-    color: #e44d26;
+    font-weight: 700;
+    background-color: rgba(16, 238, 127, 0.557);
     
-    background-color: rgba(147, 112, 219, 0.1);
-    border-color: rgba(147, 112, 219, 0.3);
 }
 .all{
     border-radius: 0.5rem;
-    color: #007bff;
-    background-color: rgba(29, 47, 75, 0.887);
-    border-color: rgba(147, 112, 219, 0.3);
+    font-weight: 700;
+    background-color: rgba(68, 133, 194, 0.771);
+
 }

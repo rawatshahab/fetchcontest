@@ -13,12 +13,23 @@ body[data-theme="dark"] .content span{
    
 }
 .main{
-    height: auto;
-    min-height: 100vh;
+   height: auto;
     width: 100vw;
     padding-bottom: 30px;
     margin-top: 80px;
 }
+.a{
+    width: 100vw;
+    position: sticky; 
+    top: 50px; 
+    overflow: hidden; 
+    backdrop-filter: blur(10px);
+    padding-top: 9px;
+
+   
+}
+
+
 
 .text{
     display: flex;
@@ -56,22 +67,20 @@ body[data-theme="dark"] .content span{
     margin: 0 auto;
 
 }
-.platforms-1,.platforms-2{
+.platforms-1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     background: white;
-    width: 98%;
-    max-width: 800px;
-    margin: 10px auto;
+    max-width: 600px;
+    margin: 0 auto;
     border-radius: 1rem;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     gap: 10px;
     padding: 20px;
-
-
+   
 }
 
 .platforms-1 h1{
@@ -79,22 +88,13 @@ flex-basis: 100%;
 font-size: 1.2rem;
 
 }
-.platforms-2 h1{
-    flex-basis: 100%;
-    font-size: 1.2rem;
-}
+
 .platforms-1 div{
     padding: 5px 10px;
     font-size: 0.9rem;
     border-radius: 0.5rem;
 }
-.platforms-2 div{
-    border-radius: 0.5rem;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    padding: 5px 10px;
-    font-size: 0.9rem;
-    background:  #F8F9FA;;
-}
+
 
 #yello{
     display: flex;
@@ -131,6 +131,10 @@ font-size: 1.2rem;
     padding: 3px 3px;
     gap: 5px;
     margin-bottom: 30px;
+ 
+   
+    max-width: 331px;
+    margin: 10px auto;
 }
 .content span {
 
@@ -162,3 +166,7 @@ font-size: 1.2rem;
 .content span, .visit-link, .bookmark-icon, #yello, #voilet, #red {
     cursor: pointer;
 }
+/* .content-2 {
+    overflow-y: auto; 
+    height: calc(100vh - 80px); 
+} */

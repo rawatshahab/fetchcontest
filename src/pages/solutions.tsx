@@ -36,21 +36,27 @@ export default function Solutions() {
 
     return (
         <main className="solutions-page">
+            <div className="sticky">
+            <div className="sticky-content">
             <h1>Past Contest Solutions</h1>
             <div className="platform-filters">
-                <div onClick={() => filterByPlatform("All")} className={selectedPlatform === "LeetCode" ? "active-filter" : ""}>
-                    <span className={activetabb === "All" ? "all" : ""}>All</span>
+                <div onClick={() => filterByPlatform("All")} className={activetabb === "All" ? "all" : ""} >
+                    <span >All</span>
                     </div>
-                <div  onClick={() => filterByPlatform("LeetCode")} className={selectedPlatform === "LeetCode" ? "active-filter" : ""}>
-                    <span className={activetabb === "LeetCode" ? "red" : ""}>LeetCode</span>
+                <div  onClick={() => filterByPlatform("LeetCode")}  className={activetabb === "LeetCode" ? "green" : ""}>
+                    <span>LeetCode</span>
                 </div>
-                <div  onClick={() => filterByPlatform("CodeChef")} className={selectedPlatform === "CodeChef" ? "active-filter" : ""}>
-                    <span className={activetabb === "CodeChef" ? "yellow" : ""}>CodeChef</span>
+                <div  onClick={() => filterByPlatform("CodeChef")} className={activetabb === "CodeChef" ? "blue" : ""}>
+                    <span >CodeChef</span>
                 </div>
-                <div  onClick={() => filterByPlatform("Codeforces")} className={selectedPlatform === "Codeforces" ? "active-filter" : ""}>
-                    <span className={activetabb === "Codeforces" ? "voilet" : ""}>Codeforces</span>
+                <div  onClick={() => filterByPlatform("Codeforces")} className={activetabb === "Codeforces" ? "voilet" : ""}>
+                    <span >Codeforces</span>
                 </div>
             </div>
+            </div>
+           
+            </div>
+          
 
                
 
