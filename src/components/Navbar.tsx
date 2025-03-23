@@ -24,6 +24,7 @@ export default function Navbar() {
                         <h1 style={{color:'black'}}>Contest Tracker</h1>
                     </Link>
                     <a href='/solutions'>Solutions</a>
+                    <a href='/contests'>Contest</a>
                 </div>
                 <div className="theme-switcher" onClick={toggleTheme}>
                     {theme === "light" ? <Moon /> : <Sun />}

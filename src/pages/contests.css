@@ -1,0 +1,56 @@
+main{
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: row;
+    width: 100vw;
+
+}
+.filters{
+    display: flex;
+    width: 35%;
+    margin-top: 60px;
+    height: fit-content;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.filters h1{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    flex-basis: 100%;
+}
+.filters div{
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+}
+
+
+.platform{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+}
+.state{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+}
+.platform div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem 0.5rem 0.5rem 0;
+}
+.state div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem 0.5rem 0.5rem 0;
+}
