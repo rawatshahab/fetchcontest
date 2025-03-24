@@ -17,6 +17,7 @@ const ContestDetails: React.FC<ContestCardProps> = ({ name, site, startTime, dur
 
     useEffect(() => {
       axios.get("http://localhost:3000/api/bookmarks")
+      
         .then(response => {
           const isBookmarked = response.data.some(bookmark => bookmark.name === name && bookmark.site === site); 
           setBookmarked(isBookmarked);
