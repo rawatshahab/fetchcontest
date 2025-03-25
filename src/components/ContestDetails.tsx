@@ -12,6 +12,7 @@ interface ContestCardProps {
   onUpdateBookmarks: () => void; 
 }
 
+
 const ContestDetails: React.FC<ContestCardProps> = ({ name, site, startTime, duration, url, onUpdateBookmarks }) => {
     const [bookmarked, setBookmarked] = useState(false);
 
